@@ -18,8 +18,8 @@ const data = [
 export default function Game(){
 
     const [questions, setQuestions] = useState([]);
-    const flashcards = createCards();
     const [answers, setAnswers] = useState([]);
+    const flashcards = createCards();
 
     function createCards (){
         if (questions.length === 0){
@@ -40,6 +40,38 @@ export default function Game(){
         }
     }
 
+    function createFooter(){
+        let result = <></>;
+
+        if (questions.length === answers.length && answers.length >0){
+            if (!answers.includes("forgot")){
+                result = (
+                    <div className="result">
+                        <span><Icons icon="happy"/> Parabéns!</span>
+                        <p>Você não esqueceu de nenhum flashcard!</p>
+                    </div>
+                )
+            } else {
+                result = (
+                    <div className="result">
+                        <span><Icons icon="sad"/> Putz!</span>
+                        <p>Ainda faltam alguns... Mas não desanime!</p>
+                    </div>
+                )
+            }
+        } 
+        
+        return (
+            <>
+            {result}
+            <p>{answers.length}/{data.length} Concluídos!</p>
+            { answers.map(answer => <Icons icon={answer} />)}
+            </>
+        )
+    }
+
+    const footer = createFooter();
+
     return (
         <div className="Game">
             <header>
@@ -50,12 +82,7 @@ export default function Game(){
                 {flashcards}
             </main>
             <footer>
-                <p>{answers.length}/{data.length} Concluídos!</p>
-                {
-                    answers.map(answer => {
-                        return <Icons icon={answer} />
-                    })
-                }
+                {footer}
             </footer>
         </div>
     )
