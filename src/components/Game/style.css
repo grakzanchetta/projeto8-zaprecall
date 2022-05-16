@@ -1,0 +1,49 @@
+.Game {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    background-color: var(--color-back);    
+}
+
+.Game header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 42px;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    color: white;
+    font-family: "Righteous";
+    background-color: var(--color-back); 
+    z-index: 1;
+}
+
+.Game header img {
+    width: 52px;
+    height: 60px;
+  }
+
+  .Game main {
+    margin: 150px 0px;
+  }
+
+  .Game footer {
+    width: 100%;
+    min-height: 70px;
+    padding: 25px 115px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+  }

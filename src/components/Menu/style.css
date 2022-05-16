@@ -10,22 +10,15 @@
     z-index: 1;
     position: absolute;
     background-color: var(--color-back);
-  }
-  
-  .Menu * {
     margin-bottom: 30px; 
   }
-  
+    
   .Menu h1 {
     font-family: "Righteous", cursive;
     font-size: 36px;
     color: white;
     letter-spacing: -0.012em;
-  }
-  
-  .Menu img {
-    width: 136px;
-    height: 161px;
+    margin-bottom: 30px; 
   }
   
   .Menu button {

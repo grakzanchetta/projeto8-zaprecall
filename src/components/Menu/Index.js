@@ -11,9 +11,9 @@ export default function Menu (){
         <div className="Menu">
             <img src={Logo} alt="zap-main"/>
             <h1>ZapRecall</h1>
-            <button onClick= {() => setVisible(false)}>Start</button>
+            <button onClick= {() => setVisible(false)}>Iniciar Recall!</button>
         </div>
         )
     }
-    return <></>;
+    return '';
 }
