@@ -1,49 +1,53 @@
 .Game {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 0;
-    background-color: var(--color-back);    
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+  position: absolute;
+  background-color: var(--color-back);
 }
 
 .Game header {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 42px;
-    left: 0;
-    right: 0;
-    font-size: 36px;
-    color: white;
-    font-family: "Righteous";
-    background-color: var(--color-back); 
-    z-index: 1;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  font-size: 36px;
+  color: white;
+  font-family: "Righteous";
+  z-index: 1;
+  background-color: var(--color-back);
 }
 
 .Game header img {
-    width: 52px;
-    height: 60px;
-  }
+  width: 52px;
+  height: 60px;
+}
 
-  .Game main {
-    margin: 150px 0px;
-  }
+.Game main {
+  margin: 150px 0px;
+}
 
-  .Game footer {
-    width: 100%;
-    min-height: 70px;
-    padding: 25px 115px;
-    font-size: 18px;
-    background-color: white;
-    color: black;
-    bottom: 0;
-    position: fixed;
-    text-align: center;
-  }
+.Game .resultado {
+  margin-bottom: 20px;
+}
+
+.Game footer {
+  width: 100%;
+  min-height: 70px;
+  padding: 25px 115px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  bottom: 0;
+  z-index: 1;
+  position: fixed;
+  text-align: center;
+}

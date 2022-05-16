@@ -25,13 +25,13 @@ export default function Game(){
             setQuestions([...data])
             return <></>
         } else {
-            return questions.map((question, index = 1) => {
+            return questions.map((question, index) => {
                 const {front, back } = question;
                 return <Flashcard 
                 key={index}
                 front={front}
                 back={back}
-                index={index+1}
+                index={index + 1}
                 />
             })
         }

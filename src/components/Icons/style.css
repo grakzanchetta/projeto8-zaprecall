@@ -1,0 +1,20 @@
+.Icon {
+    color: var(--preto);
+  }
+  
+  .Icon svg {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .Icon .forgot {
+    color: var(--color-forgot);
+  }
+  
+  .Icon .almost {
+    color: var(--color-almost-forgot);
+  }
+  
+  .Icon .zap {
+    color: var(--color-no-forgot);
+  }

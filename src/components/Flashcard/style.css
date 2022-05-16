@@ -1,0 +1,79 @@
+.Flashcard .panel {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 25px 0px;
+    padding: 23px 15px;
+    cursor: pointer;
+    font-family: 'Recursive', cursive;
+  }
+  
+  .Flashcard .panel.closed {
+    max-height: 65px;
+  }
+  
+  .Flashcard .panel.open {
+    min-height: 130px;
+    display: block;
+    background-color: var(--color-cardback);
+    position: relative;
+    cursor: default;
+  }
+  
+  .Flashcard .panel.open .icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer
+  }
+
+  .Flashcard .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .Flashcard .buttons * {
+    color: white;
+    width: 85px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Recursive', cursive;
+    font-size: 12px;
+  }
+  
+  .Flashcard .buttons .forgot {
+    background-color: var(--color-forgot);
+  }
+  
+  .Flashcard .buttons .almost {
+    background-color: var( --color-almost-forgot);
+  }
+  
+  .Flashcard .buttons .zap {
+    background-color: var(--color-no-forgot);
+  }
+  
+  .Flashcard .end p {
+    text-decoration: line-through;
+  }
+  
+  .Flashcard .end .forgot {
+    color: var(---color-forgot);
+  }
+  
+  .Flashcard .end .almost {
+    color: var( --color-almost-forgot);
+  }
+  
+  .Flashcard .end .zap {
+    color: var(--color-no-forgot);
+  }
