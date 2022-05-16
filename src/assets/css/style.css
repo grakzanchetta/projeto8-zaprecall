@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  --color-cardback: #FFFFD4;
+  --cor-forgot: #FF3030;
+  --cor-almost-forgot: #FF922E;
+  --cor-no-forgot: #2FBE34;
+  --color-back: #FB6B6B;
+  --black: #333333;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-back);
+  color: var(--black);
+  font-family: 'Recursive', sans-serif;
+}
