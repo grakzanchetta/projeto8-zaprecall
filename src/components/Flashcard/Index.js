@@ -7,7 +7,7 @@ export default function Flashcard(props) {
         stage: 1,
         result: ""
       });
-    const {front, back, index, endgame} = props;
+    const {front, back, index, endGame} = props;
     
     const content = createContent();
 
@@ -53,7 +53,7 @@ export default function Flashcard(props) {
                   className={result} 
                   onClick={() => {
                     setStatus({stage: 4, result});
-                    //aoFinalizar(resultado);
+                    endGame(result);
                   }}
                 >
                   {text}

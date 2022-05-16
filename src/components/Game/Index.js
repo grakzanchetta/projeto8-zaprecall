@@ -2,6 +2,7 @@ import {useState} from "react";
 import LogoSmall from "./../../assets/img/logo-pequeno.png"
 import "./style.css";
 import Flashcard from "../Flashcard/Index"
+import Icons from "../Icons/Index"
 
 const data = [
     { front: "O que é JSX?", back: "Uma extensão de linguagem do JavaScript" },
@@ -18,6 +19,7 @@ export default function Game(){
 
     const [questions, setQuestions] = useState([]);
     const flashcards = createCards();
+    const [answers, setAnswers] = useState([]);
 
     function createCards (){
         if (questions.length === 0){
@@ -32,6 +34,7 @@ export default function Game(){
                 front={front}
                 back={back}
                 index={index + 1}
+                endGame={answer => setAnswers([...answers, answer])}
                 />
             })
         }
@@ -47,7 +50,12 @@ export default function Game(){
                 {flashcards}
             </main>
             <footer>
-                <p>0/{data.length} Concluídos!</p>
+                <p>{answers.length}/{data.length} Concluídos!</p>
+                {
+                    answers.map(answer => {
+                        return <Icons icon={answer} />
+                    })
+                }
             </footer>
         </div>
     )
