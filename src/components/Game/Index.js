@@ -36,6 +36,7 @@ export default function Game(){
                 index={index + 1}
                 endGame={answer => setAnswers([...answers, answer])}
                 />
+                
             })
         }
     }
@@ -75,11 +76,13 @@ export default function Game(){
     return (
         <div className="Game">
             <header>
-                <img src={LogoSmall} alt="zap-deck"/>
-                <h1>ZapRecall</h1>
+                    <img src={LogoSmall} alt="zap-deck"/>
+                    <h1>ZapRecall</h1>
             </header>
             <main>
+            <div className="cardsContainer">
                 {flashcards}
+            </div>
             </main>
             <footer>
                 {footer}

@@ -10,7 +10,13 @@
   z-index: 0;
   position: absolute;
   background-color: var(--color-back);
+  overflow-y: auto;
 }
+
+.cardsContainer {
+  margin-top: 375px;
+}
+
 
 .Game header {
   width: 300px;
@@ -18,12 +24,14 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 0px;
   font-size: 36px;
   color: white;
   font-family: "Righteous";
   z-index: 1;
   background-color: var(--color-back);
+  padding-top: 48px;
+  padding-bottom: 51px;
 }
 
 .Game header img {
@@ -35,7 +43,7 @@
   margin: 150px 0px;
 }
 
-.Game .resultado {
+.Game .result {
   margin-bottom: 20px;
 }
 
